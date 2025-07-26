@@ -1,4 +1,7 @@
 {
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "name": "@alexbog1985/ajs",
   "version": "1.0.0",
   "description": "",
@@ -12,9 +15,17 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
   }
 }
